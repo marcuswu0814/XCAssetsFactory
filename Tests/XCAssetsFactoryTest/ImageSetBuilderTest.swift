@@ -14,7 +14,7 @@ class ImageSetBuilderTest: XCTestCase {
         Grouped().execute()
     }
     
-    func test__whenFoundSamePrefixFiles__shouldPutIntoSameFolder() {
+    func test__givenXCAssetesPathAndImageDirPath__shouldMoveImageDirIntoXCAssetsToBeImageAssets() {
         let sut = ImageSetBuilder(with: TestEnv.xcassetsPath)
         sut.build(from: TestEnv.tempDir + Path("ic_a"))
         

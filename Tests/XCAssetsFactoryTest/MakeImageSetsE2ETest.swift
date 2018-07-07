@@ -13,7 +13,7 @@ class MakeImageSetsE2ETest: XCTestCase {
         Grouped().execute()
     }
     
-    func test__whenFoundSamePrefixFiles__shouldPutIntoSameFolder() {
+    func test__whenFoundCurrentDirHadImageDirs__shouldPutIntoXCAssets() {
         let sut = MakeImageSets(with: TestEnv.xcassetsPath)
         sut.execute()
         
